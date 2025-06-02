@@ -7,89 +7,145 @@
   <title>Landing Page</title>
   <script src="https://unpkg.com/feather-icons"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="landing.css" />
 </head>
 <body>
-  <header>
-      <a href="https://github.com/inoaaand" target="_blank" aria-label="Instagram" style="position: absolute; top: 10px; right: 20px; color:white">
-        <i data-feather="github"></i>
-      </a>
-      <a href="https://instagram.com/ifnand4" target="_blank" aria-label="Instagram" style="position: absolute; top: 10px; right: 50px; color:white">
-        <i data-feather="instagram"></i>
-      </a>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#impacto-cultural">Impacto Cultural</a></li>
-        <li><a href="#principais-artistas">Principais Artistas</a></li>
-        <li><a href="#hip-hop-moda">Hip-hop e a Moda</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="">
+          <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+      
+              <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <button type="button" 
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-none focus:ring-inset" 
+                        aria-controls="mobile-menu" 
+                        aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+      
+              <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex shrink-0 items-center">
+                  <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-4">
+        
+                  <a href="#home" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+                  <a href="#impacto-cultural" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Impacto Cultural</a>
+                  <a href="#principais-artistas" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Principais Artistas</a>
+                  <a href="#hip-hop-moda" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Hip-hop e a Moda</a>
+                </div>
+              </div>
+      
+              <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button type="button" 
+                        class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-none">
+                  <span class="sr-only">View notifications</span>
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                  </svg>
+                </button>
+      
+                <div class="relative ml-3">
+                  <div>
+                    <button type="button" 
+                            class="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-none" 
+                            id="user-menu-button" 
+                            aria-expanded="false" 
+                            aria-haspopup="true">
+                      <span class="sr-only">Open user menu</span>
+                      <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" />
+                    </button>
+                  </div>
+                
+                  <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1">Your Profile</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1">Settings</a>
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1">Sign out</a>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+          <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+              <a href="#home" class="block rounded-md px-3 py-2 text-base font-medium text-white bg-gray-900" aria-current="page">Home</a>
+              <a href="#impacto-cultural" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Impacto Cultural</a>
+              <a href="#principais-artistas" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Principais Artistas</a>
+              <a href="#hip-hop-moda" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Hip-hop e a Moda</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
 
-  <section id="home">
-    <h2><i data-feather="home"></i></h2>
-    <h1>Bem-vindo à nossa jornada pelo Hip-Hop!</h1>
-    <p>
-      O hip-hop não é apenas uma cultura ou uma música. Ele é um reflexo de
-      uma sociedade em transformação, um movimento que nasceu das ruas e
-      conquistou o mundo. Mais do que um gênero musical, o hip-hop é uma
-      plataforma de expressão, resistência e inovação.
-    </p>
-    <p>
-      Ao longo das décadas, ele evoluiu e se transformou, mas nunca perdeu sua
-      essência: dar voz aos marginalizados, àqueles que não têm espaço nas
-      grandes mídias, aos que lutam por um mundo mais justo. Aqui, vamos
-      explorar como o hip-hop não só transformou a música, mas também impactou
-      a moda, as artes visuais, o cinema e a política.
-    </p>
-    <p>
-      Hoje, o hip-hop é um dos gêneros mais influentes do planeta, presente
-      nos charts musicais, nas campanhas publicitárias, nas passarelas e até
-      mesmo nos discursos políticos. Ele conecta gerações, ultrapassa
-      fronteiras e se reinventa constantemente — e essa página é um convite
-      para mergulhar nesse universo.
-    </p>
-  </section>
-
+      <section id="home" class="max-w-4xl mx-auto p-6 text-gray-800">
+        <div class="flex items-center space-x-3 mb-6">
+          <i data-feather="home" class="text-violet-600 w-8 h-8"></i>
+          <h2 class="text-3xl font-serif">Bem-vindo à nossa jornada pelo Hip-Hop!</h2>
+        </div>
+      
+        <div class="flex justify-center mb-6">
+          <button class="w-full max-w-xs rounded-md bg-violet-500 px-6 py-3 text-white font-semibold shadow-lg 
+                         hover:bg-violet-600 focus:outline-none focus:ring-4 focus:ring-violet-400 active:bg-violet-700 
+                         transition">
+            INICIAR JORNADA
+          </button>
+        </div>
+        <div class="space-y-4 text-lg leading-relaxed">
+          <p>
+            O hip-hop não é apenas uma cultura ou uma música. Ele é um reflexo de uma sociedade em transformação, um movimento que nasceu das ruas e conquistou o mundo. Mais do que um gênero musical, o hip-hop é uma plataforma de expressão, resistência e inovação.
+          </p>
+          <p>
+            Ao longo das décadas, ele evoluiu e se transformou, mas nunca perdeu sua essência: dar voz aos marginalizados, àqueles que não têm espaço nas grandes mídias, aos que lutam por um mundo mais justo. Aqui, vamos explorar como o hip-hop não só transformou a música, mas também impactou a moda, as artes visuais, o cinema e a política.
+          </p>
+          <p>
+            Hoje, o hip-hop é um dos gêneros mais influentes do planeta, presente nos charts musicais, nas campanhas publicitárias, nas passarelas e até mesmo nos discursos políticos. Ele conecta gerações, ultrapassa fronteiras e se reinventa constantemente — e essa página é um convite para mergulhar nesse universo.
+          </p>
+        </div>
+      </section>
   
-  <section id="impacto-cultural">
-    <h2><i data-feather="trending-up"></i></h2>
-    <h2>Impacto Cultural do Hip-Hop: Uma Revolução Global</h2>
-    
-    <p>
-      O hip-hop emergiu como uma forma de resistência, surgindo nas ruas do
-      Bronx, Nova York, em um período de grande desigualdade social. No
-      entanto, o impacto do hip-hop ultrapassou as fronteiras dos Estados
-      Unidos e se espalhou pelo mundo. Em cada cidade, em cada esquina, em
-      cada bairro, o hip-hop encontrou um novo significado.
-    </p>
-    <p>
-      Hoje, vemos como o hip-hop toca e influencia todos os aspectos da
-      sociedade. Nas artes, ele redefiniu o conceito de grafite, transformando
-      o que antes era visto como vandalismo em uma forma legítima de arte
-      contemporânea. No cinema, filmes como "8 Mile" e "Straight Outta
-      Compton" ajudaram a narrar histórias de luta e superação, enquanto na
-      política, o hip-hop tem sido uma poderosa ferramenta para protestos e
-      mudanças sociais.
-    </p>
-    <p>
-      Kendrick Lamar, um dos maiores nomes da atualidade, é exemplo vivo desse
-      impacto: suas músicas não apenas ganharam prêmios como o Pulitzer,
-      Grammy, mas também dominaram o Hot 100 da Billboard, colocando o rap no
-      topo das paradas e mostrando ao mundo o poder de sua mensagem lírica e
-      social como visto na imagem a seguir.
-    </p>
-    <p>
-      O hip-hop também introduziu um novo modo de pensar a moda. Suas raízes
-      nas ruas deram origem a um estilo autêntico e irreverente que ressoou
-      com jovens em todo o mundo. Não é à toa que muitas das marcas mais
-      reconhecidas do planeta se associaram ao estilo hip-hop, criando
-      colaborações e coleções exclusivas para esse público fiel e apaixonado.
-    </p>
-    <img class="img-artista" src="img/kendrickL.png" alt="Kendrick Top 100">
-
-  </section>
+      <section id="impacto-cultural" class="max-w-4xl mx-auto p-6 text-gray-800">
+        <div class="flex items-center space-x-3 mb-6">
+          <i data-feather="trending-up" class="text-violet-600 w-8 h-8"></i>
+          <h2 class="text-3xl font-semibold">Impacto Cultural do Hip-Hop: Uma Revolução Global</h2>
+        </div>
+      
+        <div class="space-y-6 text-lg leading-relaxed">
+          <p>
+            O hip-hop emergiu como uma forma de resistência, surgindo nas ruas do Bronx, Nova York, em um período de grande desigualdade social. No entanto, o impacto do hip-hop ultrapassou as fronteiras dos Estados Unidos e se espalhou pelo mundo. Em cada cidade, em cada esquina, em cada bairro, o hip-hop encontrou um novo significado.
+          </p>
+      
+          <p>
+            Hoje, vemos como o hip-hop toca e influencia todos os aspectos da sociedade. Nas artes, ele redefiniu o conceito de grafite, transformando o que antes era visto como vandalismo em uma forma legítima de arte contemporânea. No cinema, filmes como "8 Mile" e "Straight Outta Compton" ajudaram a narrar histórias de luta e superação, enquanto na política, o hip-hop tem sido uma poderosa ferramenta para protestos e mudanças sociais.
+          </p>
+      
+          <p>
+            Kendrick Lamar, um dos maiores nomes da atualidade, é exemplo vivo desse impacto: suas músicas não apenas ganharam prêmios como o Pulitzer e o Grammy, mas também dominaram o Hot 100 da Billboard, colocando o rap no topo das paradas e mostrando ao mundo o poder de sua mensagem lírica e social.
+          </p>
+      
+          <div class="flex items-center space-x-3 mb-6">
+            <img src="/img/Kendrick.jpeg" alt="Kendrick Lamar" class="w-12 h-12 rounded-full object-cover" />
+            <span class="font-semibold">Kendrick Lamar</span>
+          </div>
+      
+          <p>
+            O hip-hop também introduziu um novo modo de pensar a moda. Suas raízes nas ruas deram origem a um estilo autêntico e irreverente que ressoou com jovens em todo o mundo. Não é à toa que muitas das marcas mais reconhecidas do planeta se associaram ao estilo hip-hop, criando colaborações e coleções exclusivas para esse público fiel e apaixonado.
+          </p>
+      
+          <img src="img/kendrickL.png" alt="Kendrick Lamar" class="w-full rounded-lg object-cover aspect-[3/2]" />
+        </div>
+      </section>
+      
 
   <section id="principais-artistas">
     <h2><i data-feather="music"></i></h2>
@@ -154,19 +210,41 @@
       sociais e culturais.
     </p>
     <div class="artistas">
-      <figure>
+      <figure><div class="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4 ...">
+        <img class="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" src="/img/erin-lindford.jpg" alt="" />
+        <div class="space-y-2 text-center sm:text-left">
+          <div class="space-y-0.5">
+            <p class="text-lg font-semibold text-black">Erin Lindford</p>
+            <p class="font-medium text-gray-500">Product Engineer</p>
+          </div>
+          <button class="border-purple-200 text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white active:bg-purple-700 ...">
+            Message
+          </button>
+        </div>
+      </div>
+        <iframe class="aspect-video ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
         <img class="img-artista" src="img/doja.jpg" alt="Doja Cat">
+        <div class="overflow-visible ...">
+          </div>
         <figcaption>Doja Cat</figcaption>
       </figure>
 
       <figure>
+        <iframe class="aspect-video ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
         <img class="img-artista" src="img/tyl.jpg" alt="Tyler The Creator">
         <figcaption>Tyler, The Creator</figcaption>
+        <div class="overflow-visible ...">
+            <!-- ... -->
+          </div>
       </figure>
 
       <figure>
+        <iframe class="aspect-video ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
         <img class="img-artista" src="img/tupac.jpg" alt="Tupac Shakur">
         <figcaption>Tupac Shakur</figcaption>
+        <div class="overflow-visible ...">
+            <!-- ... -->
+          </div>
       </figure>
     </div>
   </section>
@@ -188,7 +266,16 @@
       exclusivos, bonés e joias chamativas transmite um recado claro: o
       hip-hop não segue regras.
     </p>
+
     <p>
+        <p>
+            Today I spent most of the day researching ways to ...
+            <span class="inline-flex items-baseline">
+              <img src="/img/KNAYE.jpg" class="mx-1 size-5 self-center rounded-full" />
+              <span>Kramer</span>
+            </span>
+            keeps telling me there is no way to make it work, that ...
+          </p>
       Kanye West, com sua marca <strong>Yeezy</strong>, redefiniu a indústria
       da moda ao levar o estilo de rua diretamente para as passarelas. Sua
       colaboração com a Adidas para criar tênis e roupas de alta performance
@@ -229,6 +316,13 @@
       não se limita a um gênero musical, mas se expande por todas as formas de
       expressão humana.
     </p>
+
+    <div class="columns-3xs ...">
+        <img class="aspect-3/2 ..." src="/img/mountains-1.jpg" />
+        <img class="aspect-square ..." src="/img/mountains-2.jpg" />
+        <img class="aspect-square ..." src="/img/mountains-3.jpg" />
+        <!-- ... -->
+      </div>
     <img class="img-artista" src="img/travis.png" alt="Travis Scott">
     <img class="img-artista" src="img/yeezy.jpg" alt="YEEZY">
   </section>
