@@ -1,0 +1,111 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: #9756be;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+  }
+    
+  nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ba68c8;
+  }
+  
+  
+  section {
+    padding: 100px 20px 60px 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+  }
+  
+  
+  #home {
+    background: #f3e5f5;
+  }
+  
+  #impacto-cultural {
+    background: #e1bee7;
+  }
+  
+  #principais-artistas {
+    background: #ce93d8;
+  }
+  
+  #hip-hop-moda {
+    background: #c469d4;
+  }
+  
+  
+  img {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #9756be;
+    color: white;
+    position: relative;
+  }
+
+  section h1, section h2, section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: monospace;
+  }
+  
+  .artistas {
+    max-width: 900%;
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .artistas figure {
+    text-align: center;
+    width: 110%; 
+  }
+
+   
+  figcaption {
+    margin-top: 8px;
+    font-family: monospace;
+    color: #000000;
+    font-weight: 20;
+  }
+
+  
+  
